@@ -2,11 +2,19 @@
 
 ## Project Setup
 - clone the project on your local
+<<<<<<< HEAD
 - execute `npm install` on the same path as of your root dir of the downloaded project.
 - create a `.env` file in the root dir and add the following environment variables
 -> `PORT=3000`
 - inside the 'src/config' folder create a new file `config.json` and then add the following piece of JSON.
 ```
+=======
+- execute 'npm install' on the same path as of your root dir of the downloaded project.
+- create a '.env' file in the root dir and add the following environment variables
+-> 'PORT=3000'
+- inside the 'src/config' folder create a new file 'congig.json' and then add the following piece of JSON.
+'''
+>>>>>>> f856428593b5e284e2e76328ba8c21cadab52e41
 {
   "development": {
     "username": "YOUR DB LOGIN NAME",
@@ -17,5 +25,10 @@
   }
 
 }
+<<<<<<< HEAD
 ```
 - once you've added your db config as listed above, go to the src folder from your terminal and execute `npm sequelize db:create` .
+=======
+'''
+- once you've added your db config as listed above, go to the src folder from your terminal and execute 'npm sequelize db:create' .
+>>>>>>> f856428593b5e284e2e76328ba8c21cadab52e41
