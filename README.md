@@ -17,8 +17,11 @@
   }
 
 }
-```
+
 - once you've added your db config as listed above, go to the src folder from your terminal and execute `npm sequelize db:create` .
+and then execute :
+` npm sequelize db:migrate`
+```
 
 # DB Design
   - Airplane Table
@@ -30,4 +33,4 @@
   - a city has many airports but one airport belongs to a city
   - one airport can have many flights, but a flight belongs to one airport.
 
-  
+
