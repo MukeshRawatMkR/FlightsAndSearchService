@@ -2,7 +2,7 @@ const express=require("express");
 const bodyParser=require("body-parser");
 // const {City} =require('./models/index'); 
 const{PORT}=require('./config/serverConfig');
-const CityRepository=require('./repository/city-repository');
+// const CityRepository=require('./repository/city-repository');//to add delete a city.
 
 
 const setupAndStartServer=async()=>{
@@ -19,9 +19,15 @@ app.listen(PORT, async()=>{
     /* await City.create({
         name:"New Delhi",
      })*/
-    /*const repo=new CityRepository();
+    /*(to add a city)
+    const repo=new CityRepository(); 
     repo.createCity({name: "Dehradun"});
     */
+   /*(To remove a city)
+   const repo=new CityRepository();
+   repo.deleteCity(1);
+   */
+
 });
 
 }
