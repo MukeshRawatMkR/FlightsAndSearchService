@@ -29,31 +29,28 @@ class CityRepository {
     }
   }
 
-  async updateCity(cityId,data) {
+  async updateCity(cityId, data) {//data is an object.
     try {
-        const city= await City.update(data, {
-            where:{
-                id:cityId
-            }
-        });
-        return city;
+      const city = await City.update(data, {
+        where: {
+          id: cityId,
+        },
+      });
+      return city;
     } catch (error) {
-        
-        console.log("Something wen wrong in the repository layer");
-        throw{error};
+      console.log("Something wen wrong in the repository layer");
+      throw { error };
     }
   }
 
-
   async getCity(cityId) {
     try {
-        const city=await City.findByPk(cityId);
-        return City;
+      const city = await City.findByPk(cityId);
+      return city;
     } catch (error) {
-        console.log("Something wen wrong in the repository layer");
-        throw{error};
+      console.log("Something wen wrong in the repository layer");
+      throw { error };
     }
-
   }
 }
 module.exports = CityRepository;
